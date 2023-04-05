@@ -12,12 +12,12 @@
 # bash install.sh
 
 # RESPOSITORY ------------------------------------------------------------
-REMOTE=https://raw.github.com/altercation/archblocks/master
+REMOTE=https://raw.github.com/maxitromer/archblocks-r7-10/master
 
 # CONFIG -----------------------------------------------------------------
 
-HOSTNAME=tau
-USERNAME=es
+HOSTNAME=r7-10
+USERNAME=maxitromer
 USERSHELL=/bin/bash
 FONT=Lat2-Terminus16
 FONT_MAP=8859-1_to_uni
