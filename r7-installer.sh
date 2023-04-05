@@ -35,27 +35,27 @@ KERNEL_PARAMS="quiet i915.i915_enable_rc6=1 i915.i915_enable_fbc=1 i915.lvds_dow
 # list a url to use as a mr config file and archblocks core install will
 # su to the new user's (USERNAME above) home and bootstrap using it.
 # mr will be installed if this variable is set.
-MR_BOOTSTRAP=https://raw.github.com/altercation/es-etc/master/vcs/.mrconfig
+# MR_BOOTSTRAP=https://raw.github.com/altercation/es-etc/master/vcs/.mrconfig
 
 # BLOCKS -----------------------------------------------------------------
 TIME=common/time_chrony_utc
 FILESYSTEM=filesystem/gpt_luks_passphrase_ext4
 BOOTLOADER=bootloader/efi_gummiboot
 NETWORK=network/wired_wireless_default
-AUDIO=common/audio_alsa
+# AUDIO=common/audio_alsa
 POWER=common/power_acpi
 SENSORS=common/sensors_default
-XORG="xorg/xorg_default xorg/xorg_fonts_infinality xorg/xorg_wacom xorg/xorg_synaptics xorg/mesa_dri"
-VIDEO=video/video_intel
-DESKTOP=xorg/desktop_xmonad_minimal
-HARDWARE=hardware/laptop/lenovo_thinkpad_x220
-APPSETS="appsets/cli_hardcore appsets/vim_basics appsets/mutt_basics appsets/git_basics appsets/server_utils appsets/chromium_basics"
+# XORG="xorg/xorg_default xorg/xorg_fonts_infinality xorg/xorg_wacom xorg/xorg_synaptics xorg/mesa_dri"
+# VIDEO=video/video_intel
+# DESKTOP=xorg/desktop_xmonad_minimal
+# HARDWARE=hardware/laptop/lenovo_thinkpad_x220
+# APPSETS="appsets/cli_hardcore appsets/vim_basics appsets/mutt_basics appsets/git_basics appsets/server_utils appsets/chromium_basics"
 
 # EXTRA PACKAGES ---------------------------------------------------------
 # if you don't want to create a new block, you can specify extra packages
 # from official repos or AUR here (simple space separated list of packages)
-PACKAGES="git rxvt-unicode xterm"
-AURPACKAGES="termite-git"
+PACKAGES="vim"
+AURPACKAGES=""
 
 # EXECUTE ----------------------------------------------------------------
 . <(curl -fsL "${REMOTE}/blocks/_lib/helpers.sh"); _loadblock "_lib/core"
